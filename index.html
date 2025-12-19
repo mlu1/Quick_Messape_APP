@@ -46,14 +46,14 @@
         }
 
         function getMessages(){
-            $.get("http://localhost:3010/messages",(data)=>{
+            $.get("https://message-qucik-app-27f52af9c04e.herokuapp.com//messages",(data)=>{
                 $("#messages").empty();
                 data.forEach(addMessage);
             })
         }
 
         function postMessages(message){
-            $.post("http://localhost:3010/messages" ,message) 
+            $.post("https://message-qucik-app-27f52af9c04e.herokuapp.com//messages" ,message) 
             
             }
 
